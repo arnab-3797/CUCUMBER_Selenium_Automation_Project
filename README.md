@@ -37,7 +37,7 @@ This repository contains the automation scripts for the Cura Health Care Service
 
    ```bash
    git clone https://github.com/yourusername/curahc-automation.git
-   cd curahc-automation
+   cd CuraHelthCareProjectCucumber
 
 ### Project Structure:
 
