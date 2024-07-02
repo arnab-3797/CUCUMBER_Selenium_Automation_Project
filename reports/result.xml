@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="71.004" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="CURA health care application test" name="Book an appoinment - #1.1" time="43.297">
+<system-out><![CDATA[
+Given User navigate to Cura health care application.........................passed
+And User loging to website with "John Doe" and "ThisIsNotAPassword".........passed
+And User select facility as "Seoul CURA Healthcare Center"..................passed
+And User select Apply for hospital readmission checkbox.....................passed
+And User select Helth care Program radiobox as Medicaid.....................passed
+And User select Visit date as "30/07/2024"..................................passed
+And user add comment as "I need a healthcare facility"......................passed
+When user click on Book Appointment button..................................passed
+Then Appointment should be sucessfull.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="CURA health care application test" name="Login should be success" time="13.454">
+<system-out><![CDATA[
+Given User navigate to Cura health care homepage............................passed
+And User clicks on login pages button.......................................passed
+And User enter the user name as "John Doe"..................................passed
+And User enter the password as "ThisIsNotAPassword".........................passed
+When User click on login button.............................................passed
+Then Login should be successfull............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="CURA health care application test" name="Login should not be success" time="13.695">
+<system-out><![CDATA[
+Given User navigate to Cura health care homepage............................passed
+And User clicks on login pages button.......................................passed
+And User enter the user name as "John Doe1".................................passed
+And User enter the password as "ThisIsNotAPassword1"........................passed
+When User click on login button.............................................passed
+But Login should be failed!.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
